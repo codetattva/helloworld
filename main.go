@@ -28,7 +28,7 @@ func main() {
 func handler(w http.ResponseWriter, r *http.Request) {
 	name := os.Getenv("NAME")
 	if name == "" {
-		name = "World, have a great day! and, have lot of fun too!"
+		name = "World, have a great day! and, have lot of fun too!ok, I'm done!"
 	}
 	fmt.Fprintf(w, "Hello %s!\n", name)
 }
